@@ -12,12 +12,12 @@ A simple and lightweight FastAPI boilerplate using Gunicorn, Nginx, and Docker.
 
 ## Features
 
-- FastAPI for building APIs
-- Uvicorn ASGI server for high-performance async support
-- Gunicorn for process management
-- Poetry for dependency management
-- Nginx as a reverse proxy
-- Fully containerized using Docker and Docker Compose support
+- **FastAPI** for building APIs
+- **Uvicorn** ASGI server for high-performance async support
+- **Gunicorn** for process management
+- **Poetry** for dependency management
+- **Nginx** as a reverse proxy
+- Fully containerized using **Docker** and **Docker Compose** support
 
 ## Installation
 
