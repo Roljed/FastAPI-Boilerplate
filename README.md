@@ -54,6 +54,7 @@ docker logs b_fastapi_nginx
 ```sh
 docker-compose down
 docker-compose up --build -d
+```
 
 ## Next Steps
 - Add a database (PostgreSQL, MySQL, MongoDB, etc.)
