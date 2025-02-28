@@ -4,7 +4,6 @@ LABEL authors="nahshon"
 WORKDIR /app
 
 COPY . /app
-RUN pip install poetry && poetry install --no-root
+RUN pip install poetry && poetry install --no-root --with dev
 
 CMD ["poetry", "run", "gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-w", "2", "-b", "0.0.0.0:8000", "app.main:app"]
-
