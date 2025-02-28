@@ -29,11 +29,6 @@ poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000
 docker-compose up --build -d
 ```
 
-### Check Running Containers
-```sh
-docker ps
-```
-
 ## Usage
 
 - FastAPI: [http://localhost:8000](http://localhost:8000)
@@ -56,11 +51,19 @@ docker-compose down
 docker-compose up --build -d
 ```
 
-## Next Steps
-- Add a database (PostgreSQL, MySQL, MongoDB, etc.)
-- Implement authentication (JWT, OAuth2, etc.)
-- Optimize the Docker setup (Alpine, multi-stage builds)
-- Deploy to the cloud (AWS, GCP, Azure)
+## Running Tests
+
+Run tests locally:
+    
+```bash
+poetry run pytest
+```
+
+Run tests inside Docker
+
+```bash
+docker-compose run --rm test
+```
 
 ## License
 This project is licensed under the [MIT License](./LICENSE).
@@ -68,6 +71,4 @@ This project is licensed under the [MIT License](./LICENSE).
 ---
 
 ### Contributions & Feedback
-Fork it, improve it, and open a PR! 🚀
-
-
+Fork it, improve it, and open a PR! Contributions are always welcome. 🚀
